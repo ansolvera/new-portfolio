@@ -1,0 +1,8 @@
+<!-- JavaScript Cookie -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<!-- Global JavaScript -->
+{{ $options := (dict "includePaths" (slice "node_modules" )) }}
+
+{{ $global := resources.Get "js/app.js" | js.Build $options | resources.Minify }}
+<script type="text/javascript" src="{{ $global.Permalink }}"></script>

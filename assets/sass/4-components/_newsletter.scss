@@ -1,0 +1,48 @@
+#newsletter-form {
+    height: 3.5rem;
+    width: 100%;
+    @include flexRow(center);
+
+    .form-container {
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        @include flexRow(center);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    input[type="email"], input[type="submit"] {
+        height: 100%;
+    }
+
+    input[type="email"] {
+        border: 1px solid $gray-100;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0.5rem; 
+        background-color: $white;
+        color: $blue-400;
+        font-size: $text-lg;
+        outline: none;
+        width: 100%;
+        padding: 0rem 1.5rem;
+
+        &::placeholder {
+            color: $gray-400;
+            opacity: 1;
+        }
+
+    }
+
+    input[type="submit"] {
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+}

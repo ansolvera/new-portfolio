@@ -1,0 +1,95 @@
+// ********************
+// CARDS
+// ********************
+
+.card {
+    width: 100%;
+    position: relative;
+    padding: 2.5rem;
+    transition: all 300ms ease-in-out;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h3 {
+        font-size: $text-3xl;
+        font-weight: 700;
+    }
+}
+
+// PACKAGES CARD
+.packages-card {
+    @extend .card;
+    border-radius: 0.5rem;
+    @include flexColumn(center);
+
+    li::before {
+        content: url(img/check-circle.svg);
+    }
+
+}
+
+// SERVICES CARD
+.services-card {
+    @extend .card;
+    background-color: $white;
+    border-radius: 0.5rem;
+    text-align: center;
+    @include flexColumn(center);
+    align-items: center;
+
+    p {
+        color: $gray-500;
+        line-height: 1.5;
+    }
+}
+
+// POST CARD
+.post-card {
+    @extend .card;
+    min-height: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    @include flexColumn(space-between);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #fff, $alpha: 0.04);
+        backdrop-filter: contrast(1.05);
+    }
+
+    .post-card-top, a {
+        position: relative;
+        z-index: 100;
+    }
+
+    .tag {
+        font-size: $text-lg;;
+        font-weight: bold;
+        color: $gray-200
+    }
+
+    h3 {
+        color: $white;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+}

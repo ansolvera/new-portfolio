@@ -1,0 +1,56 @@
+#sidebar {
+
+    .sidebar-form, .sidebar-card {
+        background-color: $gray-50;
+        border: 1px solid $gray-200;
+        border-radius: 0.5rem;
+
+        p {
+            color: $gray-600;
+            line-height: 1.5;
+        }
+
+    }
+
+    .sidebar-card {
+        overflow: hidden;
+
+        img {
+            height: 50%;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: $text-xl;
+            font-weight: 600;
+        }
+
+        .card-content {
+            border-top: 1px solid $gray-200;
+            padding: 2.5rem;
+        }
+
+        a {
+            width: 100%;
+        }
+
+    }
+
+    .sidebar-form {
+        position: sticky;
+        top: 7.5rem;
+        padding: 3.75rem 2.5rem;
+
+        .form-content {
+            padding: 0rem 1.25rem;
+        }
+
+        h2 {
+            font-size: $text-4xl;
+        }
+
+
+    }
+
+}
+

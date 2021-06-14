@@ -1,0 +1,35 @@
+#toast {
+    --height: 10rem;
+    height: var(--height);
+    width: calc(var(--height) * 3);
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 2.5rem;
+    color: $white;
+    background: linear-gradient(to bottom, $blue-100, $blue-400);
+    border-radius: 0.5rem;
+    z-index: 800;
+    @include flexRow(space-between);
+
+    h6 {
+        color: $white;
+    }
+
+    img {
+        height: $size-xl;
+        width: $size-xl;
+        border-radius: 100%;
+    }
+
+    button {
+        color: $gray-100;
+        font-size: $text-base;
+        cursor: pointer;
+    }
+
+    .toast-link-wrapper {
+        @include flexRow(start);
+    }
+
+}

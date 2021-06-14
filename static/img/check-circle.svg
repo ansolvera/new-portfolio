@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check-circle</title>
+    <g id="Apple-Macbook-Pro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="check-circle" fill="#FFFFFF">
+            <path d="M8,0 C12.4183,0 16,3.58172 16,8 C16,12.4183 12.4183,16 8,16 C3.58172,16 0,12.4183 0,8 C0,3.58172 3.58172,0 8,0 Z M10.2929,5.29289 L7,8.5858 L5.70711,7.29289 C5.31658,6.90237 4.68342,6.90237 4.29289,7.29289 C3.90237,7.68342 3.90237,8.3166 4.29289,8.7071 L6.29289,10.7071 C6.68342,11.0976 7.31658,11.0976 7.70711,10.7071 L11.7071,6.70711 C12.0976,6.31658 12.0976,5.68342 11.7071,5.29289 C11.3166,4.90237 10.6834,4.90237 10.2929,5.29289 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

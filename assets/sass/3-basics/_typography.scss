@@ -1,0 +1,297 @@
+// ********************
+// FONTS
+// ********************
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+// ********************
+// HEADINGS
+// ********************
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0rem;
+    color: $gray-900;
+}
+
+h1, h2 {
+    letter-spacing: -0.05em;
+}
+
+h3, h4 {
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-size: $text-7xl;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: $text-6xl;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: $text-5xl;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: $text-4xl;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: $text-3xl;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: $text-2xl;
+    font-weight: 600;
+}
+
+// ********************
+// BODY TEXT
+// ********************
+
+/* p  {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $gray-500;
+} */
+
+.text-xs {
+    font-size: 0.75 rem;
+    line-height: 1rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+// ********************
+// PROSE
+// ********************
+
+.prose {
+    max-width: 65ch;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: $prose-400;
+
+    strong {
+        color: $prose-600;
+        font-weight: 600;
+    }
+
+    > h2:first-of-type {
+        margin-top: 0em;
+    }
+
+    > p:first-of-type {
+        font-size: $text-xl;
+        line-height: 1.5;
+        margin-top: 0em;
+        margin-bottom: 1em;
+        color: $prose-500;
+
+    }
+
+    p {
+        margin-top: 1.3em;
+        margin-bottom: 1.3em;
+        color: $prose-400;
+    }
+
+    hr {
+        display: block;
+        width: 50%;
+        margin: 3em auto;
+    }
+
+    hr + * {
+        margin-top: 0em;
+    }
+
+    h1, h2, h3, h4 {
+        color: $prose-600;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+        font-weight: 600;
+        line-height: 1.6em;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+    }
+
+    h2 + h3 {
+        margin-top: 0em;
+    }
+
+    blockquote {
+        background-color: $gray-50;
+        margin: 1.6em 0em;
+        padding: 3.75em;
+        border-radius: 1em;
+
+        > p {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: $prose-600;
+        }
+
+    }
+
+    a {
+        color: $blue-400;
+        font-weight: 600;
+    }
+
+    ul li:before {
+        content: "";
+        display: inline-block;
+        height: 0.5rem;
+        width: 0.5rem;
+        background: $blue-400;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+    }
+
+    img {
+        width: 100%;
+        margin: 2em 0em;
+        border-radius: 1em;
+    }
+
+    &.has-dropcap {
+
+        > p:first-of-type {
+
+            &::first-letter {
+                float: left;
+                font-size: 3em;
+                font-weight: bold;
+                line-height: 1;
+                padding-right: 0.2em;
+            }
+
+        }
+        
+    }
+
+}
+
+// ********************
+// CUSTOM
+// ********************
+
+.subtitle {
+    font-size: $text-xl;
+    font-weight: 500;
+    color: $gray-500;
+    line-height: 1.5;
+}
+
+.eyebrow {
+    font-size: $text-2xl;
+    font-weight: 600;
+    color: $gray-500;
+    line-height: 1;
+    letter-spacing: -0.025rem;
+}
+
+strong {
+    color: $gray-900;
+    font-weight: 600;
+}
+
+.testimonial {
+    text-align: center;
+    font-size: $text-2xl;
+    font-weight: 500;
+    color: $gray-700;
+    line-height: 1.5;
+}
+
+.highlight {
+    background-image: linear-gradient(to right, $blue-100, $blue-400);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: -0.25rem;
+    padding-right: 0.25rem;
+}
+
+span {
+
+    &.blue {
+        color: $blue-400;
+    }
+
+    &.orange {
+        color: $orange-400;
+    }
+
+    &.red {
+        color: $red-400;
+    }
+
+}

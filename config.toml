@@ -1,0 +1,13 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+languageName = "English"
+
+title = "Alex Sanchez | Full-Stack Designer"
+
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+title = "Alex Sanchez | Full-Stack Designer"
+author = "Alex Sanchez"
+copyright = "Copyright © ANSO Enterprises, LLC | All rights reserved."

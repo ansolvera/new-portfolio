@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<!-- HERO SECTION -->
+<section id="hero" class="section py-160">
+    <div class="container">
+        <div class="helmet text-center mx-auto" data-sal="slide-up" data-sal-duration="600">
+            <p class="eyebrow mb-20" data-sal="slide-up" data-sal-delay="200" data-sal-duration="600">Contact</p>
+            <h1 class="mb-20" data-sal="slide-up" data-sal-delay="400" data-sal-duration="600">Got a question? Just ask</h1>
+            <p class="subtitle" data-sal="slide-up" data-sal-delay="600" data-sal-duration="600">If you have a project in mind or just want to chat, feel free to drop me a message. My time books up quickly, but I try to respond to each message within 48 hours.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section bg-gray pt-0 pb-120">
+    <div class="tilt-wrapper top">
+        <img src="/img/top-tilt.svg" alt="">
+    </div>
+    <div class="container">
+        <form action="post" id="contact-form" class="mx-auto shadow-2xl" data-sal="fade" data-sal-delay="600" data-sal-duration="600">
+            <div class="form-grid">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name">
+                <select name="select" id="select">
+                    <option value="disabled selected">I want to talk about ...</option>
+                </select>
+                <textarea name="textarea" id="textarea" placeholder="Type your message here (please try to keep it short and sweet) ..." required></textarea>
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

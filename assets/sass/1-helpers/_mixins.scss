@@ -1,0 +1,46 @@
+// ********************
+// FLEXBOX MIXINS
+// ********************
+
+// FLEX ROWS
+@mixin flexRow($alignment) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $alignment;
+    align-items: center;
+}
+
+// FLEX COLUMNS
+@mixin flexColumn($alignment) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $alignment;
+    align-items: flex-start;
+}
+
+// ********************
+// GRID MIXINS
+// ********************
+
+// GRID COLUMNS
+@mixin gridColumns($number, $gap) {
+    display: grid;
+    gap: $gap;
+
+    @include breakpointsUp(medium){
+        grid-template-columns: repeat($number, minmax(0, 1fr));
+    }
+
+    @include breakpointsUp(medium) {
+        grid-template-rows: auto;
+    }
+
+}
+
+// GRID ROWS
+@mixin gridRows($number, $gap) {
+    display: grid;
+    gap: $gap;
+    grid-template-rows: repeat($number, minmax(0, 1fr));
+}
+

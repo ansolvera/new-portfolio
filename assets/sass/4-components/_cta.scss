@@ -1,0 +1,18 @@
+#cta {
+    background: linear-gradient(to bottom, $blue-100, $blue-400);
+
+    .cta-left {
+
+        @include breakpointsUp(medium) {
+            width: 50%;
+        }
+    }
+    
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+}

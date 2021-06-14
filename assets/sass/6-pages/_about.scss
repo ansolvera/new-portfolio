@@ -1,0 +1,12 @@
+#photo {
+
+    > div {
+        max-width: 100rem;
+    }
+
+    img {
+        height: auto;
+        object-fit: cover;
+    }
+
+}

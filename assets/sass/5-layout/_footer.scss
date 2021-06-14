@@ -1,0 +1,131 @@
+#footer {
+    padding: 2.5rem 0rem;;
+    background-color: $black;
+    font-size: $text-xs;
+    font-weight: 300;
+    color: $gray-400;
+
+    .footer-grid {
+        display: grid;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        align-items: center;
+        gap: 0rem;
+
+        @include breakpointsDown(medium) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(3, minmax(0, 1fr));
+            text-align: center;
+
+            > div {
+                @include flexColumn(center);
+            }
+
+        }
+    }
+
+    a {
+        color: $gray-400;
+    }
+
+    .btn {
+        box-shadow: none;
+        margin-left: 1.25rem;
+    }
+
+}
+
+.footer-col {
+    @include flexColumn(center);
+    text-align: center;
+
+    @include breakpointsUp(medium){
+        @include flexColumn(flex-start);
+        text-align: left;
+    }
+
+}
+
+.footer-logo-wrapper {
+    @include flexRow(flex-start);
+    margin-bottom: 1rem;
+
+    .footer-logo {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo-text {
+        font-size: $text-base;
+        font-weight: 700;
+    }
+
+}
+
+.footer-legal-wrapper {
+    @include flexRow(flex-end);
+
+    .footer-link {
+        padding: 0rem 1.25rem;
+    }
+
+
+
+}
+
+.footer-menu-wrapper {
+    @include breakpointsUp(medium) {
+        @include flexRow(flex-end);
+    }
+
+
+
+    .footer-link {
+        padding: 0rem 1.25rem;
+    }
+
+
+
+}
+
+.footer-copyright-wrapper {
+    @include breakpointsDown(medium) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.footer-social-wrapper {
+    > p {
+        display: none;
+    }
+
+    @include breakpointsUp(medium) {
+        @include flexRow(flex-end);
+
+        > p {
+            position: relative;
+            display: inline-block;
+            margin-right: 1rem;
+            padding-right: 4rem;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 0.0625rem;
+                width: 2.5rem;
+                background: rgba($color: #fff, $alpha: 0.5);
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                margin-top: -0.0625rem;
+                margin-left: 1rem;
+            }
+        }
+
+    }
+
+}
+
+.social-link {
+    height: 1rem;
+    width: 1rem;
+}

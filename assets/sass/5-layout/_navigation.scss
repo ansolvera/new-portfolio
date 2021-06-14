@@ -1,0 +1,112 @@
+header {
+    position: sticky;
+    top: 0rem;
+    z-index: 900;
+}
+
+header.open {
+    #hamburger {
+        > span:first-child {
+            transform: rotate(45deg);
+        }
+
+        > span:nth-child(2) {
+            opacity: 0;
+        }
+
+        > span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.navigation {
+    height: 3.75rem;
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    backdrop-filter: saturate(100%) blur(5px);
+    box-shadow: 0px 1px 0px $gray-200;
+    @include flexRow(center);
+
+    .container {
+        @include flexRow(space-between);
+    }
+
+}
+
+.navigation__brand {
+    height: 2.5rem;
+
+    img {
+        height: 100%;
+    }
+
+}
+
+.navigation__menu {
+
+    > a {
+        font-size: $text-sm;
+        line-height: 1;
+        font-weight: 500;
+        color: $gray-500;
+        padding: 0 1.25rem;
+        transition: color 300ms ease-in-out;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+}
+
+.navigation__hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+
+    @include breakpointsDown(medium) {
+        @include flexColumn(center);
+    }
+
+    > span {
+        display: block;
+        height: 0.125rem;
+        width: 1.5rem;
+        background-color: $gray-500;
+        transition: all 300ms ease-in-out;
+        transform-origin: 3px 1px;
+
+        &:not(:last-child){
+            margin-bottom: 0.25rem;
+        }
+
+
+    }
+
+}
+
+.navigation__menu--mobile {
+    position: fixed;
+    height: calc(100vh - 3.75rem);
+    width: 100vw;
+    visibility: hidden;
+    z-index: 800;
+    top: 3.75rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba($color:#ffffff, $alpha: 0.98);
+    opacity: 0;
+    backdrop-filter: saturate(100%) blur(10px);
+    transform: translateY(-100vh);
+    transition: transform 300ms ease-in-out;
+    @include flexColumn(center);
+
+    > a {
+        padding: 2.5rem 0rem;
+        font-size: $text-3xl;
+        font-weight: 500;
+        color: $gray-800;
+    }
+
+}

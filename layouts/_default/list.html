@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<main aria-roledescription="main">
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="section py-160">
+        <div class="container">
+            <div class="helmet text-center mx-auto" data-sal="slide-up" data-sal-duration="600">
+                <p class="eyebrow mb-20" data-sal="slide-up" data-sal-delay="200" data-sal-duration="600">Blog</p>
+                <h1 class="mb-20" data-sal="slide-up" data-sal-delay="400" data-sal-duration="600">Check out the blog</h1>
+                <p class="subtitle mb-40" data-sal="slide-up" data-sal-delay="600" data-sal-duration="600">Get a behind-the-scenes look at my design and development process. Subscribe to my newsletter to make sure you never miss a new article.</p>
+
+                <div class="form-wrapper mx-auto" data-sal="fade" data-sal-delay="800" data-sal-duration="600">
+                    {{ partial "newsletter.html" . }}
+                </div>
+
+                <p></p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- POST SECTION -->
+
+    <section id="posts" class="section pt-0 pb-120">
+        <div class="container">
+            <div class="grid-cols-posts" data-sal="fade" data-sal-delay="600" data-sal-duration="600">
+                {{ range .Pages.ByDate.Reverse }}
+                <div class="card post-card shadow-xl")>
+                    <div class="post-card-top">
+                        <p class="tag mb-20">{{ .Params.tag }}</p>
+                        <h3>{{ .Params.title }}</h3>
+                    </div>
+                    <a href="{{ .Permalink }}" class="btn btn--secondary">Read more</a>
+                    <img src="{{ .Params.thumbnail }}" alt="">
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    {{ partial "cta.html" . }}
+
+</main>
+
+
+{{ end }}

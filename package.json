@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "sal.js": "^0.8.4"
+  }
+}

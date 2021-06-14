@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<main aria-roledescription="main">
+
+    <!-- HERO SECTION -->
+
+    <!-- <section id="hero" class="section py-160">
+        <div class="container">
+            <div class="helmet mx-auto text-center mb-80">
+                <h1 class="mb-20">{{ .Title }}</h1>
+                <p class="subtitle mb-20">{{ .Summary }}</p>
+            </div>
+            <img src="{{ .Params.featured }}" alt="" class="featured-image">
+        </div>
+    </section> -->
+
+    <!-- CONTENT SECTION -->
+
+    <section id="content" class="section py-160">
+        <div class="container">
+            <div class="grid-cols-sidebar">
+                <div class="prose has-dropcap">
+                    <div class="helmet mb-20">
+                        <h1 class="mb-20">{{ .Title }}</h1>
+                        <p class="subtitle mb-20">{{ .Summary }}</p>
+                    </div>
+                    <img src="{{ .Params.featured }}" alt="" class="featured-image">
+                    {{ .Content }}
+                </div>
+                
+                {{ partial "sidebar.html" . }}
+
+            </div>
+        </div>
+    </section>
+
+    {{ partial "cta.html" . }}
+
+</main>
+
+{{ end }}

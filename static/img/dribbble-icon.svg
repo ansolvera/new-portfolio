@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dribbble</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="dribbble" transform="translate(1.000000, 1.000000)" stroke="#E5E7EB" stroke-width="2">
+            <circle id="Oval" cx="10" cy="10" r="10"></circle>
+            <path d="M6.56,0.75 C10.93,6.78 12.58,10.17 14.59,18.47 M17.13,3.09 C13.41,7.44 8.19,8.75 0.25,8.94 M19.75,10.84 C16.25,9.91 13.12,10.02 10.81,10.84 C8.23,11.76 5.8,13.7 3.37,17.16" id="Shape"></path>
+        </g>
+    </g>
+</svg>

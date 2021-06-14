@@ -1,0 +1,310 @@
+// ********************
+// REVEAL IN UP
+// ********************
+
+@keyframes revealInUp {
+    from {
+        opacity: 0;
+        transform: translateY(7.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.is-revealed {
+    animation: revealInUp ease-in-out 300ms forwards;
+}
+
+.animated {
+    .reveal {
+        opacity: 0;
+        transform: translateY(7.5rem);
+    }
+}
+
+// ********************
+// HIDE OUT DOWN
+// ********************
+
+@keyframes hideOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(7.5rem);
+    }
+}
+
+.is-hidden {
+    animation: hideOutDown ease-in-out 300ms forwards;
+}
+
+// ********************
+// FADE IN
+// ********************
+
+@keyframes fadeIn {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.is-faded-in {
+    animation: fadeIn ease-in-out 300ms forwards;
+}
+
+// ********************
+// FADE OUT
+// ********************
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.is-faded-out {
+    animation: fadeOut ease-in-out 300ms forwards;
+}
+
+// ********************
+// TOAST UP
+// ********************
+
+.fade-in, .toast-up {
+    opacity: 0;
+    transform: translateY(7.5rem);
+    will-change: opacity, transform;
+}
+
+.toast-up {
+    &.is-revealed {
+        animation-delay: 30s;
+    }
+}
+
+// ********************
+// SCALE UP
+// ********************
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+    1% {
+        transform: scale(0.5);
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 0.9;
+        visibility: visible;
+    }
+}
+
+.is-scaled-up {
+    animation: scaleUp ease-in-out 300ms forwards;
+}
+
+#splash {
+    &.is-scaled-up {
+        animation-duration: 500ms;
+    }
+}
+
+// ********************
+// SCALE DOWN
+// ********************
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.0);
+        opacity: 0.9;
+        visibility: visible;
+    }
+    99% {
+        transform: scale(0.5);
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.is-scaled-down {
+    animation: scaleDown ease-in-out 300ms forwards;
+}
+
+// ********************
+// SLIDE UP
+// ********************
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100px);
+    }
+}
+
+.is-slid-up {
+    animation: slideUp ease-in-out 300ms forwards;
+}
+
+// ********************
+// SLIDE DOWN
+// ********************
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100px);
+    }
+    1% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+.is-slid-down {
+    animation: slideDown ease-in-out 300ms forwards;
+}
+
+// ********************
+// PULSE
+// ********************
+
+@keyframes pulse {
+    from {
+        transform: scale(0.95);
+        box-shadow: 0px 0px 0px 0px rgba($color: #34c759, $alpha: 0.7);
+    }
+    70% {
+        transform: scale(1.0);
+        box-shadow: 0px 0px 0px 10px rgba($color: #34c759, $alpha: 0.0);
+    }
+    to {
+        transform: scale(0.95);
+        box-shadow: 0px 0px 0px 0px rgba($color: #34c759, $alpha: 0.0);
+    }
+}
+
+.is-pulsing {
+    animation: pulse ease-in-out 2000ms infinite;
+}
+
+#blob {
+    &.is-pulsing {
+        animation-duration: 2000ms;
+    }
+}
+
+// ********************
+// POP IN
+// ********************
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+.animated {
+    .pop {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+// ********************
+// OVERLAY
+// ********************
+
+@keyframes overlay {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+    }
+    1% {
+        opacity: 0;
+        visibility: visible;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0.8;
+        visibility: visible;
+        transform: scale(1.0);
+    }
+}
+
+#hero-section {
+    .is-revealed {
+        animation-duration: 2000ms;
+    }
+}
+
+// ********************
+// ANIMATION STAGGER
+// ********************
+
+@for $i from 1 through 10 {
+    .animated :nth-child(#{$i}n) {
+        animation-duration: #{$i * 300}ms;
+        animation-delay: #{$i * 50}ms;
+    }
+}

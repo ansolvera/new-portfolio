@@ -1,0 +1,126 @@
+// ********************
+// HERO SECTION
+// ********************
+
+.hero__left {
+    @include flexColumn(start);
+
+    @include breakpointsUp(medium) {
+        width: 50%;
+    }
+}
+
+#blob {
+    --blob-green: #34c759;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    background-color: var(--blob-green);
+
+    box-shadow: var(--blob-green);
+    transform: scale(1.0);
+}
+
+.notice {
+    font-size: $text-sm;
+    color: $gray-500;
+
+    > span {
+        font-weight: 700;
+    }
+
+}
+
+// ********************
+// CLOUD SECTION
+// ********************
+
+.cloud-subtitle {
+    color: $gray-300;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cloud-wrapper {
+    flex-wrap: wrap;
+    @include flexRow(center);
+
+    img {
+        height: 2.5rem;
+        margin: 2.5rem;
+    }
+}
+
+.logo {
+    height: 2.5rem;
+    margin: 2.5rem;
+}
+
+// ********************
+// STRIPE SECTION
+// ********************
+
+section#stripe {
+    --py-stripe: calc(100vw/10);
+    background: linear-gradient(to bottom, $blue-100, $blue-400);
+    padding-top: calc(5rem + var(--py-stripe));
+    padding-bottom: calc(5rem + var(--py-stripe));
+    color: $white;
+    overflow-y: visible;
+    
+    h2 {
+        color: $white;
+    }
+
+    .subtitle {
+        color: $gray-100;
+    }
+
+}
+
+.tilt-wrapper {
+    position: absolute;
+    height: calc(100vw/10);
+    width: 101vw;
+
+    &.top {
+        top: -1px;
+        left: -1px
+    }
+
+    &.bottom {
+        bottom: -1px;
+        right: -1px;
+    }
+
+    > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+// ********************
+// SERVICES SECTION
+// ********************
+
+#services {
+    .link--small::before {
+        content: '📨';
+        height: 1.5rem;
+        width: 1.5rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+}
+
+// ********************
+// PORTFOLIO SECTION
+// ********************
+
+#portfolio {
+    padding-top: calc(7.5rem + 10vw);
+}
+
+

@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<main aria-roledescription="main">
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="section py-160">
+        <div class="container">
+            <div class="helmet mx-auto text-center">
+                <h1 class="mb-20">{{ .Title }}</h1>
+                <p class="subtitle mb-20">{{ .Description }}</p>
+                <p><strong>Last updated: </strong>{{ .Lastmod.Format "January 2, 2006" }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+
+    <section id="content" class="section pt-0 pb-120">
+        <div class="container">
+            <div class="grid-cols-sidebar">
+                <div class="prose">
+                    {{ .Content }}
+                </div>
+                
+                {{ partial "sidebar.html" . }}
+
+            </div>
+        </div>
+    </section>
+</main>
+
+{{ end }}

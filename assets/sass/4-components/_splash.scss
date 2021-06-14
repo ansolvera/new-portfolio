@@ -1,0 +1,35 @@
+#splash {
+    position: fixed;
+    visibility: hidden;
+    z-index: 999;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: $white;
+    opacity: 0;
+    backdrop-filter: saturate(100%) blur(10px);
+    transform: scale(0.5);
+    transition: transform 300ms ease-in-out;
+    @include flexColumn(center);
+
+    .container {
+        text-align: center;
+    }
+
+    .exit__close-wrapper {
+        position: absolute;
+        top: 2.5%;
+        right: 2.5%;
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+        @include flexColumn(center);
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+}

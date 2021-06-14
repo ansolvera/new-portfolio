@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>external-link</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-996.000000, -7676.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="external-link" transform="translate(996.000000, 7676.000000)">
+                <path d="M8,0 C7.4477,0 7,0.44772 7,1 C7,1.55228 7.4477,2 8,2 L10.5858,2 L4.29289,8.2929 C3.90237,8.6834 3.90237,9.3166 4.29289,9.7071 C4.68342,10.0976 5.31658,10.0976 5.70711,9.7071 L12,3.41421 L12,6 C12,6.55228 12.4477,7 13,7 C13.5523,7 14,6.55228 14,6 L14,1 C14,0.44772 13.5523,0 13,0 L8,0 Z" id="Path"></path>
+                <path d="M2,2 C0.89543,2 0,2.89543 0,4 L0,12 C0,13.1046 0.89543,14 2,14 L10,14 C11.1046,14 12,13.1046 12,12 L12,9 C12,8.4477 11.5523,8 11,8 C10.4477,8 10,8.4477 10,9 L10,12 L2,12 L2,4 L5,4 C5.55228,4 6,3.55228 6,3 C6,2.44772 5.55228,2 5,2 L2,2 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

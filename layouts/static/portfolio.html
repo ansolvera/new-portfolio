@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<!-- HERO SECTION -->
+<section id="hero" class="section py-160">
+    <div class="container">
+        <div class="helmet text-center mx-auto" data-sal="slide-up" data-sal-duration="600">
+            <p class="eyebrow mb-20" data-sal="slide-up" data-sal-delay="200" data-sal-duration="600">Portfolio</p>
+            <h1 class="mb-20" data-sal="slide-up" data-sal-delay="400" data-sal-duration="600">Here's some of my past work</h1>
+            <p class="subtitle" data-sal="slide-up" data-sal-delay="600" data-sal-duration="600">Here are a few client project, design explorations, and concept pieces I've put together recently. Case studies coming soon.</p>
+        </div>
+    </div>
+</section>
+
+<!-- POST SECTION -->
+<section id="shots" class="section pt-0 pb-120">
+    <div class="container">
+        <div class="grid-cols-shots" data-sal="fade" data-sal-delay="600" data-sal-duration="600">
+            <div class="shot-wrapper shadow-xl">
+                <img src="/img/bonmatin-thumb.webp" alt="" class="shot">
+            </div>
+            <div class="shot-wrapper shadow-xl">
+                <img src="" alt="" class="shot">
+            </div>
+            <div class="shot-wrapper shadow-xl">
+                <img src="" alt="" class="shot">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}
